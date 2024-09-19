@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaltoes Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/index.js"></script>
+</head>
+<body>
+    <div id="header">
+        <!-- <h1>tester</h1> -->
+        <img src="../images/AalltoesLogo.svg" alt="Aaltoes Logo">
+        <ul>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">PROJECTS</a></li>
+            <li><a href="#">TEAM</a></li>
+            <li><a href="#">GET INVOLVED</a></li>
+        </ul>
+    </div>
+    <div class="BreakPoint"></div>
+    <div id="QuoteRotator">
+        <p id="quotefield">ALWAYS DEFAULT TO ACTION!</p>
+    </div>
+    <div class="BreakPoint"></div>
+    <div class="AboutUs Animated fromLeft">
+        <h1>ABOUT US</h1>
+        <p>Aalto Entrepreneurship Society (Aaltoes) is the most prominent and most active student-run entrepreneurship society in Europe. Our main goal is simple  – build the next generation of entrepreneurs. Over the years we’ve done this by building events and programs targeted from the new university student to those who are already running their startup.
+            <br><br>
+            We organise events that inspire students to show role models of successful founders, and to keep striving and reaching for bigger goals and showing that tremendous success comes only by working hard and smart. Alongside inspiration, events provide knowledge on how to build startups.
+            <br><br>
+            We believe that the best way to learn entrepreneurial skills is to start building something of your own, either as a volunteer building a project or building your own company. Our community consists of highly ambitious and driven people who push themselves and the others forward, chase the limits and give back to the community. We are building the world’s next big things, it’s up to you if you want to be in the audience or the leader of change.
+            <br><br>
+            Currently the Aaltoes team is building 5 bigger projects: FR8, Strive, Ignite, Fusion & a startup idea validation course.
+            </p>
+    </div>
+    <iframe class="ContentMedia Animated fromRight" width="1280" height="720" src="https://www.youtube.com/embed/gxhw_M-94Vk" title="This is Aaltoes - Aalto Entrepreneurship Society" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="BreakPoint"></div>
+    <div class="ContentMedia Animated fromLeft">
+        <img class="Animated subIMG" src="../images/HistoryPic.jpg" alt="HistoryImage">
+    </div>
+    <div class="History Animated fromRight" id="tester1">
+        <h1>HISTORY</h1>
+                <p id="HistoryText">In 2008 a university professor in Helsinki told his students that becoming an entrepreneur is the worst decision you can make. At that time, the Finnish mindset wasn’t an entrepreneurial one – taking risks or giving a shot at your idea wasn’t respected. A group of students from Aalto University decided that it was time for a paradigm shift and embarked on a trip that would shape not only Aalto University but the whole of Finland...</p>
+                <p onclick="replaceHistoryText()" id="HistoryMore"> <u><i>Read more about our history...</i></u></p>
+    </div>
+    <div class="BreakPoint"></div>
+    <div class="Projects Animated fromLeft">
+        <h1>RUNNING PROJECTS</h1>
+    </div>
+    <div class="BreakPoint"></div>
+    <div class="project-container">
+        <div class="project-item Animated fromLeft">
+            <div id="FR8project">
+                <img src="../images/FR8-vector.svg" class="ProjectLogo" alt="FR8Logo" id="FR8img">
+                <p class="ProjectText" id="FR8Text">FR8 is a six-month long residency program launching in Finland, designed for the most potential future changemakers.</p>
+                <p class="ProjectText" id="FR8Link">Read more and apply: <a href="fr8.wtf">FR8.wtf</a></p>
+                <p class="ProjectText" onclick="replaceFR8Text()" id="FR8More"> <u><i>Read more about FR8...</i></u></p>
+            </div>
+        </div>
+        <div class="project-item Animated fromRight">
+            <div >
+                <img src="../images/Strive.png"  id="ProjectLogoBase" alt="StriveLogo">
+                <p class="ProjectText" id="StriveText">Strive connects students to work at startups through a recruitment portal.</p>
+                <p class="ProjectText" id="StriveLink">Read more: <a href="Striveforstartups.com">Striveforstartups.com</a></p>
+                <p class="ProjectText" onclick="replaceStriveText()" id="StriveMore"> <u><i>Read more about Strive...</i></u></p>
+            </div>
+        </div>
+        <div class="project-item Animated fromLeft">
+            <div >
+                <img src="../images/Ignite.png" class="ProjectLogo" alt="IgniteLogo">
+                <p class="ProjectText" id="IgniteText">In Ignite you learn everything you need to launch your startup from zero!</p>
+                <p class="ProjectText" id="IgniteLink">Read more from: <a href="https://ignite.aaltoes.com/">ignite.aaltoes.com</a></p>
+                <p class="ProjectText" onclick="replaceIgniteText()" id="IgniteMore"> <u><i>Read more about Ignite...</i></u></p>
+            </div>
+        </div>
+        <div class="project-item Animated fromRight">
+            <div >
+                <img src="../images/Fusion.png" class="ProjectLogo" alt="FusionLogo">
+                <p class="ProjectText" id="FusionText">Fusion is creating the next generation of deep tech founders!</p>
+                <p class="ProjectText" onclick="replaceFusionText()" id="FusionMore"> <u><i>Read more about Fusion...</i></u></p>
+            </div>
+        </div>
+        <div class="project-item Animated fromLeft">
+            <div >
+                <img src="../images/SIVC.png" class="ProjectLogo" alt="SIVCLogo">
+                <p class="ProjectText" id="SIVCText">Startup idea validation course is a 6-week-long university course where by the end of this course students have a clear product in mind with its demand proven by customers..</p>
+                <p class="ProjectText" id="SIVCLink">More info from: <a href="https://sisu.aalto.fi/student/courseunit/otm-ba774ed0-7427-41dd-b3ea-3e9915c7c89a/brochure">SISU</a> and our <a href="https://t.me/startupvalidationcourse">telegram</a> apply the course <a href="https://aaltoes2024.typeform.com/to/cO632Gdm">here</a></p>
+                <p class="ProjectText" onclick="replaceSIVCText()" id="SIVCMore"> <u><i>Read more about Startup idea validation course...</i></u></p>
+            </div>
+        </div>
+        <div class="project-item Animated fromRight"></div>
+    </div>
+    <div class="BreakPoint"></div>
+    <div class="Projects Animated fromRight">
+        <h1>BOARD MEMBERS 2024</h1>
+    </div>
+    <div class="BreakPoint"></div>
+    <div class="members-container">
+        <div class="members-item Animated fromLeft">
+            <div class="MemberPic">
+                <img src="../images/Maija.jpg" class="MemberPic" alt="FR8Logo" id="FR8img">
+                <p class="MemberText"> <b>Maija Rissanen</b><br>President<br>firstname.lastname@aaltoes.com<br>TG: @maijarissanen</p>
+            </div>
+        </div>
+        <div class="members-item Animated fromRight">
+            <div class="MemberPic">
+                <img src="../images/Ernesti.jpg" class="MemberPic" alt="FR8Logo" id="FR8img">
+                <p class="MemberText"><b>Ernesti Sario</b><br>Vice president & FR8<br>firstname.lastname@aaltoes.com<br>TG: @internetrookie</p>
+            </div>
+        </div>
+        <div class="members-item Animated fromLeft">
+            <div class="MemberPic">
+                <img src="../images/Tomi.jpg" class="MemberPic" alt="FR8Logo" id="FR8img">
+                <p class="MemberText"><b>Tomi Tan-Röholm</b><br>Partnerships & Fusion<br>firstname.lastname@aaltoes.com<br>TG: @tomi_tr</p>
+            </div>
+        </div>
+        <div class="members-item Animated fromRight">
+            <div class="MemberPic">
+                <img src="../images/Particia.jpg" class="MemberPic" alt="FR8Logo" id="FR8img">
+                <p class="MemberText"><b>Patricia Sarkkinen</b><br>Marketing<br>firstname.lastname@aaltoes.com<br>TG: @patariisi</p>
+            </div>
+        </div>
+        <div class="members-item Animated fromLeft">
+            <div class="MemberPic">
+                <img src="../images/Samuli.jpg" class="MemberPic" alt="FR8Logo" id="FR8img">
+                <p class="MemberText"><b>Samuli Hartikainen</b><br>International & Strive<br>firstname.lastname@aaltoes.com<br>TG: @samuliha</p>
+            </div>
+        </div>
+        <div class="members-item Animated fromRight">
+            <div class="MemberPic">
+                <img src="../images/Hermani.jpg" class="MemberPic" alt="FR8Logo" id="FR8img">
+                <p class="MemberText"><b>Hermanni Aho</b><br>Finance<br>firstname.lastname@aaltoes.com<br>TG: @ahohermanni</p>
+            </div>
+        </div>
+    </div>
+    <div class="BreakPoint"></div>
+    <div class="GetInvolved Animated fromLeft">
+        <h1>GET INVOLVED</h1>
+        <p><b>Join our events!</b><br>
+            Come learn about startups, meet successful founders and network with other entrepreneurial people. To never miss an event join our <a href="https://t.me/aaltoes">telegram info channel</a> and follow us in <a href="http://instagram.com/aaltoes">instagram.</a><br>
+            Do you want to build your own event or a program driving the Finnish startup ecosystem forward? Or do you want to join an existing project as a volunteer?<br>
+            <a href="https://aaltoes2024.typeform.com/to/ks8CJ86H">Contact us via this form!</a>
+            <br><br>
+            You will find us at:<br>
+            <b>Startup Sauna</b><br>
+            Puumiehenkuja 5A (02150 Espoo Finland), doors open on weekdays 8:00-15:30.
+            </p>
+    </div>
+    <iframe class="ContentMedia Animated fromRight" width="800" height="400" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.5768946276314!2d24.821618277342175!3d60.187735242015854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468df58d0e541191%3A0x1d783914b8c6d695!2sStartup%20Sauna!5e0!3m2!1sen!2sfi!4v1724672482311!5m2!1sen!2sfi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="BreakPoint"></div>
+    <div class="footer-container">
+        <!-- <div class="footer-section">
+            <h3>RESOURCES</h3>
+            <ul>
+                <li><a href="#">Code of Conduct</a></li>
+                <li><a href="#">Billing info</a></li>
+                <li><a href="#">Association rules</a></li>
+                <li><a href="#">Privacy notice</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>STAY ON THE LOOP</h3>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Telegram Info Channel</a></li>
+                <li><a href="#">Event calendar</a></li>
+            </ul> -->
+            <div class="footer-section">
+            <p>&copy; Aaltoes 2024</p>
+        </div>
+   	</div>
+   </div>
+</body>
+</html>
